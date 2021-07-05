@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная Venom-2</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="body-blood">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<a href="/" class="header__logo">
+						<img src="img/logo.png" height="71" width="46" alt="logo: venom" class="header__image">
+					</a>
+					<nav class="header__nav nav">
+						<button class="nav__burger burger">
+							<span class="burger__text">Меню</span>
+							<img src="./img/burger.svg" alt="icon:menu-burger">
+						</button>
+						<button class="nav__close close">
+							<span class="close__text">закрыть</span>
+							<img src="./img/close.svg" alt="icon:menu-close">
+						</button>
+						<ul class="nav__menu">
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">о фильме</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link _underway">трейлер</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link _underway">актеры</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link _underway">премьера</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__hero hero">
+					<div class="hero__text">
+						<span class="hero__data">16 сентября 2021</span>
+						<img src="./img/venom-2.svg" class="hero__logo" alt="logo: venom-2">
+						<p class="hero__description">
+							В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из
+							комиксов Marvel.
+						</p>
+					</div>
+					<div class="hero__button-group">
+						<a data-fancybox href="https://www.youtube.com/watch?v=EHaOCkk6KTE" class="btn btn-primary">
+							<span>смотреть трейлер</span>
+						</a>
+						<a href="#" class="btn btn-link _underway">
+							<span>билеты на премьеру</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+	</div>
+	<img src="./img/venom.png" alt="venom" class="venom">
+	<div class="hide-form ">
+		<button class="order-trigger">
+			— И куда едем?
+		</button>
+		<div class="order-ticket">
+			<form class="order-ticket__form">
+				<fieldset class="order-ticket__form-wrapper">
+					<legend class="order-ticket__title">Заполните форму</legend>
+					<small class="order-ticket__description">И получите на почту расписание ближайших сеансов в вашем городе и
+						возможные акции</small>
+					<label class="order-ticket__label">
+						<input class="order-ticket__input" type="text" required name="name">
+						<span class="order-ticket__label-text">Имя</span>
+					</label>
+					<label class="order-ticket__label">
+						<input class="order-ticket__input" type="text" name="surname">
+						<span class="order-ticket__label-text">Фамилия</span>
+					</label>
+					<label class="order-ticket__label">
+						<input class="order-ticket__input" type="text" required name="city">
+						<span class="order-ticket__label-text">Город</span>
+					</label>
+					<label class="order-ticket__label ">
+						<input class="order-ticket__input" type="email" required name="mail">
+						<span class="order-ticket__label-text">e-mail</span>
+					</label>
+					<label class="order-ticket__label">
+						<input class="order-ticket__checkbox" type="checkbox" required name="personal" value="agree">
+						<span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a href="#">персональных
+								данных</a></span>
+					</label>
+					<button>Отправить</button>
+				</fieldset>
+				<div class="order-ticket__preloader-wrapper">
+					<video loop muted autoplay playsinline src="img/6.mp4" type="video/mp4"></video>
+				</div>
+				<fieldset class="order-ticket__thanks-wrapper">
+					<legend>Спасибо <span class="order-ticket__thanks-name">-имя-</span></legend>
+					<p>Вам на почту в скором времени будет отправлено письмо с расписание сеансов в вашем городе</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

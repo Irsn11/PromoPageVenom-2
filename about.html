@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>О фильме Venom-2</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="primary">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<a href="/" class="header__logo">
+						<img src="img/logo.png" height="71" width="46" alt="logo: venom" class="header__image">
+					</a>
+
+					<nav class="header__nav nav">
+						<button class="nav__burger burger">
+							<span class="burger__text">Меню</span>
+							<img src="./img/burger.svg" alt="icon:menu-burger">
+						</button>
+						<button class="nav__close close ">
+							<span class="close__text">закрыть</span>
+							<img src="./img/close.svg" alt="icon:menu-close">
+						</button>
+						<ul class="nav__menu">
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">о фильме</a>
+							</li>
+							<li class="nav__item">
+								<a href="trailer.html" class="nav__link">трейлер</a>
+							</li>
+							<li class="nav__item">
+								<a href="actors.html" class="nav__link">актеры</a>
+							</li>
+							<li class="nav__item">
+								<a href="premier.html" class="nav__link">премьера</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="content">
+			<div class="container">
+				<div class="row">
+					<div class="content__col">
+						<h2 class="content__title">О фильме</h2>
+						<p class="content__text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе
+							обаятельного суперзлодея из комиксов Marvel.</p>
+						<h3 class="content__subtitle ">В главных ролях</h3>
+						<ul class="content__list col-2">
+							<li class="content__item">Том Харди</li>
+							<li class="content__item">Мишель Уильям</li>
+							<li class="content__item">Вуди Харрельсон</li>
+							<li class="content__item">Наоми Харрис</li>
+							<li class="content__item">Стивен Грэм</li>
+							<li class="content__item">Рейд Скотт</li>
+							<li class="content__item">Эд Кейр</li>
+							<li class="content__item">Шон Делани</li>
+							<li class="content__item">Уилльям Барбо</li>
+							<li class="content__item">Пегги Лу</li>
+						</ul>
+						<div class="content__preview">
+							<a data-fancybox href="https://www.youtube.com/watch?v=EHaOCkk6KTE" class="content__play">
+								<img src="./img/play.svg" alt="play_icon">
+							</a>
+
+						</div>
+					</div>
+					<div class="content__col ">
+						<div class="content__poster-wrapper">
+							<img src="./img/poster.jpg" alt="poster" class="content__poster">
+							<div class="content__creators">
+
+								<h3 class="content__subtitle">Режиссер</h3>
+								<ul class="content__list">
+									<li class="content__item">Энди Серкис</li>
+								</ul>
+
+								<h3 class="content__subtitle">Сценарий</h3>
+								<ul class="content__list">
+									<li class="content__item">Келли Марсел</li>
+									<li class="content__item">Том Харди</li>
+								</ul>
+
+								<h3 class="content__subtitle">Продюсеры</h3>
+								<ul class="content__list">
+									<li class="content__item">Ави Арад</li>
+									<li class="content__item">Том Харди</li>
+									<li class="content__item">Келли Марсел</li>
+								</ul>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+		<div class="hide-form ">
+			<button class="order-trigger">
+				— И куда едем?
+			</button>
+			<div class="order-ticket">
+				<form class="order-ticket__form">
+					<fieldset class="order-ticket__form-wrapper">
+						<legend class="order-ticket__title">Заполните форму</legend>
+						<small class="order-ticket__description">И получите на почту расписание ближайших сеансов в вашем городе и
+							возможные акции</small>
+						<label class="order-ticket__label">
+							<input class="order-ticket__input" type="text" required name="name">
+							<span class="order-ticket__label-text">Имя</span>
+						</label>
+						<label class="order-ticket__label">
+							<input class="order-ticket__input" type="text" name="surname">
+							<span class="order-ticket__label-text">Фамилия</span>
+						</label>
+						<label class="order-ticket__label">
+							<input class="order-ticket__input" type="text" required name="city">
+							<span class="order-ticket__label-text">Город</span>
+						</label>
+						<label class="order-ticket__label ">
+							<input class="order-ticket__input" type="email" required name="mail">
+							<span class="order-ticket__label-text">e-mail</span>
+						</label>
+						<label class="order-ticket__label">
+							<input class="order-ticket__checkbox" type="checkbox" required name="personal" value="agree">
+							<span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a href="#">персональных
+									данных</a></span>
+						</label>
+						<button>Отправить</button>
+					</fieldset>
+					<div class="order-ticket__preloader-wrapper">
+						<video loop muted autoplay playsinline src="img/6.mp4" type="video/mp4"></video>
+					</div>
+					<fieldset class="order-ticket__thanks-wrapper">
+						<legend>Спасибо <span class="order-ticket__thanks-name">-имя-</span></legend>
+						<p>Вам на почту в скором времени будет отправлено письмо с расписание сеансов в вашем городе</p>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
